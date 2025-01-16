@@ -7,4 +7,9 @@
     </style>
 
     <style name="Theme.Islami" parent="Base.Theme.Islami" />
+
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="colorControlNormal">@color/primaryColor</item>
+    </style>
 </resources>
