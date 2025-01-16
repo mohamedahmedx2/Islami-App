@@ -38,7 +38,21 @@ class ChaptersAdapter(val chapters: List<Chapter>) :
         holder.itemBinding.numberVersesTv.text = chapter.versesNumber
         holder.itemBinding.chapterIndexTv.text = "${chapter.index}"
 
+        onItemClick?.let { onClick ->
 
+            holder.itemView.setOnClickListener {
+                onClick.onItemClicked(position, chapter)
+            }
+
+        }
+
+
+    }
+
+    var onItemClick: OnItemClick? = null
+
+    fun interface OnItemClick {
+        fun onItemClicked(position: Int, chapter: Chapter)
     }
 
 
