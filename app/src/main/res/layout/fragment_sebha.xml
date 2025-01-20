@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainSebha"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+    <ImageView
+        android:id="@+id/above_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/above_aimge_sebha"
+        app:layout_constraintBottom_toTopOf="@id/framsebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="NotSibling" />
+
+
+    <FrameLayout
+        android:id="@+id/framsebha"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:clipChildren="true"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/image_sebha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/image_sebha" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_zekr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/alfont_com_janna_lt_bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/framsebha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/framsebha"
+        tools:text="@string/zekr" />
+
+    <TextView
+        android:id="@+id/tv_count_zekr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/framsebha"
+        app:layout_constraintStart_toStartOf="@id/framsebha"
+        app:layout_constraintTop_toBottomOf="@id/tv_zekr"
+        tools:text="30" />
+
+    <TextView
+        android:id="@+id/default_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="24.5sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/framsebha"
+        tools:text="hsdcfjksdcjkd">
+
+    </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
