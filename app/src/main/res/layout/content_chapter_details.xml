@@ -26,6 +26,7 @@
         android:layout_marginTop="48dp"
         android:textColor="@color/primaryColor"
         android:textSize="24sp"
+        android:fontFamily="@font/alfont_com_janna_lt_bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
